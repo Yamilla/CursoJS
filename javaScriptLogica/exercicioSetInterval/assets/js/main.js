@@ -16,7 +16,6 @@ let hora = 0;
 let timer;
 
 function criarTimer() {
-
     segundo++;
     if (segundo >= 59) {
         segundo = 0;
