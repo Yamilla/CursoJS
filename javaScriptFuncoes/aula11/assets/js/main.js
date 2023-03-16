@@ -7,14 +7,6 @@ function Calculadora() {
         this.pressionaEnter();
     }
 
-    this.clearDisplay = function () {
-        this.display.value = ' ';
-    }
-
-    this.apagaUm = function () {
-        this.display.value = this.display.value.slice(0,-1);
-    }
-
     this.realizaConta = function () {
         let conta = this.display.value;
         try {
@@ -30,6 +22,15 @@ function Calculadora() {
         }
     }
 
+    this.clearDisplay = function () {
+        this.display.value = ' ';
+    }
+
+    this.apagaUm = function () {
+        this.display.value = this.display.value.slice(0,-1);
+    }
+
+   
     this.pressionaEnter = function (){
         this.display.addEventListener('keyup',(e) => {
             if (e.keyCode === 13){
